@@ -68,7 +68,7 @@ void Estimator::clearState()
         ric[i] = Matrix3d::Identity();
     }
 
-    first_imu = false,
+    first_imu = false;
     sum_of_back = 0;
     sum_of_front = 0;
     frame_count = 0;
