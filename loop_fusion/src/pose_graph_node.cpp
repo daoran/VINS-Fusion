@@ -246,9 +246,9 @@ void process()
 {
     while (true)
     {
-        sensor_msgs::ImageConstPtr image_msg = NULL;
-        sensor_msgs::PointCloudConstPtr point_msg = NULL;
-        nav_msgs::Odometry::ConstPtr pose_msg = NULL;
+        sensor_msgs::ImageConstPtr image_msg = nullptr;
+        sensor_msgs::PointCloudConstPtr point_msg = nullptr;
+        nav_msgs::Odometry::ConstPtr pose_msg = nullptr;
 
         // find out the messages with same time stamp
         m_buf.lock();
@@ -284,7 +284,7 @@ void process()
         }
         m_buf.unlock();
 
-        if (pose_msg != NULL)
+        if (pose_msg != nullptr)
         {
             //printf(" pose time %f \n", pose_msg->header.stamp.toSec());
             //printf(" point time %f \n", point_msg->header.stamp.toSec());
